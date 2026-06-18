@@ -1,0 +1,13 @@
+/* 画面全体を中央寄せにする設定 */
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  gap:10px;
+}

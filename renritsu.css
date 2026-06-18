@@ -1,0 +1,94 @@
+/* 画面全体を中央寄せにする設定 */
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* アプリ全体の白いカード型の枠 */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+/* スコア表示エリア */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+/* 連立方程式のレイアウト（中カッコの再現） */
+.equation-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.brace {
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin-right: 8px;
+  line-height: 1;
+  color: #666;
+}
+
+.equations {
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* 入力欄の配置 */
+.input-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+.input-field label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.input-field input {
+  width: 50px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ボタンの見た目 */
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
