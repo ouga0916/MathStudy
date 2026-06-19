@@ -61,8 +61,12 @@ function FormatTerm(chef, variable){
     }
 }
 
-function Random(range){
-  return Math.floor(Math.random() * range + 1);
+function Random(min,max){
+  let num = 0;
+  while(num === 0){
+    num = Math.floor(Math.Random () * (max - min + 1)) + min;
+  }
+  return num;
 }
 
 function AnsCheck(){
