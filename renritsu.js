@@ -64,7 +64,7 @@ function FormatTerm(chef, variable){
 function Random(min,max){
   let num = 0;
   while(num === 0){
-    num = Math.floor(Math.Random () * (max - min + 1)) + min;
+    num = Math.floor(Math.random () * (max - min + 1)) + min;
   }
   return num;
 }
