@@ -27,15 +27,15 @@ const ansBtn = document.getElementById("check-btn");
 ansBtn.addEventListener("click", AnsCheck);
 
 function MakeQ(){
-  x = Random(5);
-  y = Random(5);
-  ctx = Random(5);
-  cty = Random(5);
-  _ctx = Random(5);
-  _cty = Random(5);
+  x = Random(-5,5);
+  y = Random(-5,5);
+  ctx = Random(-5,5);
+  cty = Random(-5,5);
+  _ctx = Random(-5,5);
+  _cty = Random(-5,5);
   while(ctx * _cty - cty * _ctx === 0){
-    _ctx = Random(5);
-    _cty = Random(5);
+    _ctx = Random(-5,5);
+    _cty = Random(-5,5);
 }
   let UIx = FormatTerm(ctx,"x");
   let UIy = FormatTerm(cty,"y");
