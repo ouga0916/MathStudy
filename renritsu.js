@@ -55,10 +55,10 @@ function FormatTerm(chef, variable){
         if(chef === -1) return "-" + variable;
         return chef + variable;
     }else{
-        if(chef === 1) return "+" + variable;
-        if(chef === -1) return "-" + variable;
-        if(chef < 0) return variable;
-      return "+" + variable;
+        if(chef === 1) return "+ " + variable;
+        if(chef === -1) return "- " + variable;
+        if(chef < 0) return "- " + Math.abs(chef) + variable;
+      return "+ " + chef + variable;
     }
 }
 
