@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>連立方程式</title>
+  <!-- CSSファイルの読み込み -->
+  <link rel="stylesheet" href="./renritsu.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- 問題数・正答率の表示エリア -->
+    <div class="stats">
+      <div>問題数: <span id="total-cnt">0</span></div>
+      <div>正解数: <span id="correct-cnt">0</span></div>
+      <div>正答率: <span id="accuracy">0%</span></div>
+    </div>
+
+    <!-- 連立方程式の視覚的表示 -->
+    <div class="equation-box">
+      <div class="brace"></div>
+      <div class="equations">
+        <div id="eq1">0x + 0y = 0</div>
+        <div id="eq2">0x + 0y = 0</div>
+      </div>
+    </div>
+
+    <!-- 回答入力欄 -->
+    <div class="input-group">
+      <div class="input-field">
+        <label for="ans-x">x =</label>
+        <input type="number" value="0" id="ans-x">
+      </div>
+      <div class="input-field">
+        <label for="ans-y">y =</label>
+        <input type="number" value="0" id="ans-y">
+      </div>
+    </div>
+
+    <!-- 答え合わせボタン -->
+    <input type="button" value="答え合わせ" id="check-btn" class="btn">
+  </div>
+
+  <!-- JavaScriptファイルの読み込み -->
+  <script src="renritsu.js"></script>
+</body>
+</html>
